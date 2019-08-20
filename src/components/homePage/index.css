@@ -1,0 +1,19 @@
+section.section {
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 1fr;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.abc {
+  height: 100%;
+  background-color: red;
+  width: 100%;
+}

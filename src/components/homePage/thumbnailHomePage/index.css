@@ -1,0 +1,33 @@
+.main-itens {
+  height: 215px;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  margin-top: 30px;
+}
+.main-itens .content-thumbnail a.content-thumbnail-link h3 {
+  margin: 5px 0 5px 0;
+}
+
+.main-itens .content-thumbnail .content-thumbnail-link img.image {
+  height: 120px;
+  width: 100px;
+  width: 100%;
+}
+
+.main-itens div a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(69, 69, 76);
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.main-itens
+  .content-thumbnail-items
+  a.content-thumbnail-channel
+  p.visualization {
+  margin: 3px 0 3px 0;
+}

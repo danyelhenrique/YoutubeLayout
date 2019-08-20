@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url("./fonts/Montserrat-SemiBold.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
+
+#root {
+  --titles-color: rgb(13, 13, 13);
+  --font-family-roboto: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0px;
+}
+
+html,
+body,
+.app,
+#root {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(250, 250, 250);
+  font-size: 10px;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* width: 100vw !important; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--titles-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  position: relative;
+}
