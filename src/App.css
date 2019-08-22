@@ -18,7 +18,7 @@
 
 html,
 body,
-.app,
+.App,
 #root {
   height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -41,7 +41,7 @@ h6 {
   font-weight: 500;
 }
 
-.app {
+.App {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;

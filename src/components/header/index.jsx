@@ -7,19 +7,22 @@ import people from "../assets/people.svg";
 
 import "./index.css";
 
-const index = ({ renderMenu, isTrueOrFalse }) => {
-  return (
-    // onClick={() => renderMenu(!isTrueOrFalse.render)}
+const index = ({ menu, header }) => {
+  function check() {
+    if (!!menu.homePage) {
+      header({ homePage: true, smallMenu: !menu.smallMenu, display: true });
+    }
+    if (!menu.homePage) {
+      header({ homePage: false, smallMenu: false, display: !menu.display });
+    }
+  }
 
+  return (
     <header className="header-content">
       <div className="menu">
         <div className="burguer-logo">
           <div className="menu-burguer">
-            <a
-              href="#/"
-              className="burguer"
-              onClick={() => renderMenu(!isTrueOrFalse.render)}
-            >
+            <a href="#/" className="burguer" onClick={() => check()}>
               <img src={burguer} alt="burguer" />
             </a>
           </div>

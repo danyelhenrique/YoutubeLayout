@@ -1,129 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-/* 
-div.header {
-  display: flex;
-  flex-direction: row;
-  background-color: #ffff;
-  text-align: center;
-  justify-content: space-between;
-  height: 56px;
-  box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, 0.06);
-  align-items: center;
-  justify-items: center;
-  padding: 2px;
-  position: relative;
- 
-
-  width: 100%;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.header-content::after {
-  content: "";
-  box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, 0.06);
-  height: 5px;
-  z-index: 5;
-}
-
-header .menu-burguer {
-  display: flex;
-  align-items: center;
-  padding: 25px;
-}
-
-header .menu-burguer .burguer a {
-  margin-right: 20px;
-}
-
-header .menu-burguer .logo img {
-  width: 80px;
-}
-
-.header-item-search * {
-  border: 1px solid #cccc;
-  border-radius: 4px;
-}
-
-header .header-item-search form {
-  display: flex;
-  align-self: center;
-  background-color: transparent;
-}
-
-header .header-item-search {
-  display: flex;
-}
-
-header .header-item-search .header-input {
-  width: 600px;
-  border: none;
-  height: 30px;
-  outline-color: rgba(22, 22, 247, 0.596);
-}
-
-header .header-item-search i {
-  color: #7a7a7a;
-  align-self: center;
-}
-
-header .header-item-search ::placeholder {
-  font-weight: 300;
-  text-align: left;
-  padding: 2px;
-  font-family: "Roboto", sans-serif;
-}
-
-header .header-item-search .header-input-button {
-  justify-content: center;
-  align-self: center;
-  display: flex;
-  width: 70px;
-  border: none;
-  border-left: 1px solid #cccccc;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  cursor: pointer;
-  background-color: #f8f8f8;
-  height: 20px;
-  padding: 5px;
-}
-
-header .header-item-search .header-input-button i,
-header .header-item-search .header-input-button a {
-  border: none;
-  cursor: pointer;
-}
-
-header .header-item-search .header-input-button button {
-  padding: 5px;
-  border: none;
-  background-color: transparent;
-  display: flex;
-}
-
-.header-user-items {
-  display: flex;
-  align-self: center;
-  justify-content: flex-end;
-}
-
-.header-user-items img {
-  margin: 15px;
-  padding: 2px;
-} */
 
 header.header-content {
   display: flex;
   height: 55px;
   width: 100%;
   flex-direction: column;
-  /* font-family: "Roboto", sans-serif; */
   position: fixed;
+  z-index: 10;
 }
 
 header.header-content::after {
@@ -226,9 +109,3 @@ header.header-content .header-item-search form .header-input-button button {
   margin-right: 5px;
   cursor: pointer;
 }
-
-/* img {
-  height: 100%;
-  background-color: red;
-  z-index: 5;
-} */
