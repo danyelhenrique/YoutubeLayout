@@ -1,0 +1,38 @@
+.main-itens-thumb {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: rgb(245, 245, 245);
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+.content-thumbnail-thumb span {
+}
+
+.content-thumbnail-thumb {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-thumbnail-thumb a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-itens-thumb img {
+  flex: 1;
+  height: 56px;
+  width: 115px;
+}
+
+.content-thumbnail-channel-thumb {
+  font-size: 1.3rem;
+  font-weight: 400;
+}

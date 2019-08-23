@@ -1,0 +1,48 @@
+/* .main-video-page {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-video-content {
+  width: 853px;
+  height: 480px;
+  margin: 20px;
+} */
+
+.main-video-page {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(1, minmax(480px, 1fr)) 402px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "video playlist"
+    "video playlist";
+  grid-column-gap: 10px;
+  padding: 30px;
+}
+
+.main-video-content {
+  grid-area: "video";
+}
+
+.play {
+  grid-area: "playlist";
+}
+
+@media (max-width: 650px) {
+  .main-video-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "video"
+      "playlist";
+    grid-column-gap: 10px;
+    grid-column-gap: 0px;
+    padding: 0px;
+  }
+}

@@ -4,11 +4,11 @@ import "./App.css";
 import MAIN from "./components/main";
 import HEADER from "./components/header";
 import ASIDE from "./components/sidebar";
-import VIDEO from "./components/videoComponent";
+// import VIDEO from "./components/videoComponent";
 
 function App() {
   const [menu, setMenu] = useState({
-    homePage: true,
+    homePage: false,
     smallMenu: false,
     display: true
   });
@@ -44,7 +44,7 @@ function App() {
     <div className="App">
       <HEADER menu={menu} header={setMenu} />
 
-      <ASIDE menu={menu} />
+      {/* <ASIDE menu={menu} /> */}
       <MAIN menu={menu} setMenu={setMenu} />
     </div>
   );

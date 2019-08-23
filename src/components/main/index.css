@@ -1,13 +1,15 @@
 main.main {
   height: 100%;
   width: calc(100% - 260px);
-  margin: 0 auto;
+  width: 100%;
+  /* margin: 0 auto; */
   display: flex;
   flex-direction: row;
   position: relative;
-  left: 122px;
+  /* left: 122px; */
   margin-top: 55px;
   min-width: 428px;
+  box-sizing: border-box;
 }
 
 main.main.small {
