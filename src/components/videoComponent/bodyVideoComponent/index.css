@@ -1,0 +1,99 @@
+.video-component-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-height: 900px;
+  border-bottom: 0.1px solid rgb(170, 170, 170);
+  font-family: var(--font-family-roboto);
+}
+.video-component-items h1 {
+  font-size: 1.9rem;
+  font-weight: 100;
+  color: #000000;
+}
+.video-component-items h1,
+.video-component-items-content > span {
+  margin: 3px 3px;
+}
+.video-component-items .video-component-items-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin-left: 50%;
+  padding-right: 10px;
+}
+.video-component-items > span {
+  color: rgb(102, 102, 102);
+  font-size: 1.5rem;
+}
+
+.video-component-items .video-component-items-content .likeOrDislike,
+.video-component-items .video-component-items-content .video-share-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 0.1px solid rgb(6, 95, 212);
+}
+.video-component-items .video-component-items-content .likeOrDislike a {
+  margin: 0 5px;
+  display: flex;
+  text-decoration: none;
+}
+.video-component-items .likeOrDislike span {
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin: 0 6px;
+}
+
+.video-component-items .video-component-items-content .likeOrDislike a * {
+  width: 20px !important;
+  height: 20px !important;
+  color: rgb(144, 144, 144);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 6px;
+  padding: 2px;
+}
+
+.video-component-items .video-component-items-content .video-share-add {
+  border: 0px;
+}
+
+.video-share-add {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+.video-share-add a {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(96, 96, 96);
+}
+.video-share-add a * {
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  width: 28px !important;
+  height: 28px !important;
+  color: rgb(144, 144, 144);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 6px;
+  padding: 2px;
+}

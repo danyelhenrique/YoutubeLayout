@@ -1,27 +1,14 @@
-/* .main-video-page {
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.main-video-content {
-  width: 853px;
-  height: 480px;
-  margin: 20px;
-} */
-
 .main-video-page {
   width: 100%;
   height: 100%;
   /* background-color: red; */
   display: grid;
   grid-template-columns: repeat(1, minmax(480px, 1fr)) 402px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "video playlist"
-    "video playlist";
+    "video playlist"
+    "comments playlist";
   grid-column-gap: 10px;
   padding: 30px;
 }
@@ -32,6 +19,45 @@
 
 .play {
   grid-area: "playlist";
+}
+
+.content-video {
+  grid-area: "comments";
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-video h1 {
+  font-size: 1.8rem;
+}
+
+.content-video-items {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: blue; */
+  margin-right: 250px;
+  /* margin:  */
+  padding: 10px 0;
+}
+
+.content-video-items .btn-items a * {
+  width: 32px !important;
+  height: 22px !important;
+  color: rgb(144, 144, 144);
+  margin-left: 30px;
+}
+
+.content-video-items .btn-items a *:active {
+  /* width: 32px !important; */
+  /* height: 22px !important; */
+  /* color: rgb(144, 144, 144); */
+  color: blue;
+}
+
+.content-video-items span {
+  font-size: 1.6rem;
 }
 
 @media (max-width: 650px) {
